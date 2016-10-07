@@ -1,25 +1,32 @@
 {
-  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "289B9A44F7DA80667CF6FBE3B8DA92C5C5BD8E2D",
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "A32BD30F7497ECB9137DA8E495832BBFC6A7A493",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
 
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
     "289B9A44F7DA80667CF6FBE3B8DA92C5C5BD8E2D" : 0,
-    "DD129E15B74E71B11B3A28623D1D938E7AC9AFCE" : 0
+    "DD129E15B74E71B11B3A28623D1D938E7AC9AFCE" : 0,
+    "A32BD30F7497ECB9137DA8E495832BBFC6A7A493" : 9223372036854775807
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "CD5C3909-D526-4DE5-AF1D-8B9468204963",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
-    "289B9A44F7DA80667CF6FBE3B8DA92C5C5BD8E2D" : "HeySiriMacOS\/",
-    "DD129E15B74E71B11B3A28623D1D938E7AC9AFCE" : "admin-panel\/"
+    "289B9A44F7DA80667CF6FBE3B8DA92C5C5BD8E2D" : "HeySiri\/",
+    "DD129E15B74E71B11B3A28623D1D938E7AC9AFCE" : "admin-panel\/",
+    "A32BD30F7497ECB9137DA8E495832BBFC6A7A493" : "HeySiri\/"
   },
-  "DVTSourceControlWorkspaceBlueprintNameKey" : "HeySiriMacOS",
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "HeySiri",
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,
-  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "HeySiriMacOS.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "HeySiri.xcodeproj",
   "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
     {
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/matthijs2704\/HeySiri-macOS.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/pannous\/HeySiri.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "289B9A44F7DA80667CF6FBE3B8DA92C5C5BD8E2D"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/pannous\/HeySiri.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "A32BD30F7497ECB9137DA8E495832BBFC6A7A493"
     },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/WWDCScholars\/admin-panel.git",

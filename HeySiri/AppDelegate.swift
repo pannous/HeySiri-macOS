@@ -1,9 +1,10 @@
 //
 //  AppDelegate.swift
-//  HeySiriMacOS
+//  HeySiri
 //
 //  Created by Matthijs Logemann on 16/06/2016.
-//  Copyright © 2016 Matthijs Logemann. All rights reserved.
+//  Modified Pannous.com 16/09/2016
+//  Copyright © 2016 Pannous.com, Matthijs Logemann. All rights reserved.
 //
 
 import Cocoa
@@ -13,7 +14,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSSpeechRecognizerDelegate {
 
     let statusItem = NSStatusBar.system().statusItem(withLength: NSVariableStatusItemLength)
     let SR:NSSpeechRecognizer = NSSpeechRecognizer()!
-    var commands = ["Hey siri", "시리야", "ヘイ シリ", "Dis siri"]
+    var commands = ["Hey siri", "OK siri", "Hello siri", "Hi siri", "Howdy siri", "Wake up siri","Yo siri"]
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Insert code here to initialize your application
@@ -54,11 +55,9 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSSpeechRecognizerDelegate {
     
     func resumeListening(){
         NSApplication.shared().becomeFirstResponder()
-
         SR.commands = commands
         SR.delegate = self
         SR.listensInForegroundOnly = false
-        
         SR.startListening(); print("listening")
     }
     

@@ -13,11 +13,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		7B5D980F1D132718009C1439 /* HeySiriMacOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeySiriMacOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B5D980F1D132718009C1439 /* HeySiri.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeySiri.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B5D98121D132718009C1439 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7B5D98161D132718009C1439 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7B5D98191D132718009C1439 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7B5D981B1D132718009C1439 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8CAAC4C11D9E979B00C67E15 /* HeySiri.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HeySiri.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,7 +35,7 @@
 		7B5D98061D132717009C1439 = {
 			isa = PBXGroup;
 			children = (
-				7B5D98111D132718009C1439 /* HeySiriMacOS */,
+				7B5D98111D132718009C1439 /* HeySiri */,
 				7B5D98101D132718009C1439 /* Products */,
 				7B5D98211D132B2B009C1439 /* Frameworks */,
 			);
@@ -43,20 +44,21 @@
 		7B5D98101D132718009C1439 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7B5D980F1D132718009C1439 /* HeySiriMacOS.app */,
+				7B5D980F1D132718009C1439 /* HeySiri.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7B5D98111D132718009C1439 /* HeySiriMacOS */ = {
+		7B5D98111D132718009C1439 /* HeySiri */ = {
 			isa = PBXGroup;
 			children = (
+				8CAAC4C11D9E979B00C67E15 /* HeySiri.entitlements */,
 				7B5D98121D132718009C1439 /* AppDelegate.swift */,
 				7B5D98161D132718009C1439 /* Assets.xcassets */,
 				7B5D98181D132718009C1439 /* Main.storyboard */,
 				7B5D981B1D132718009C1439 /* Info.plist */,
 			);
-			path = HeySiriMacOS;
+			path = HeySiri;
 			sourceTree = "<group>";
 		};
 		7B5D98211D132B2B009C1439 /* Frameworks */ = {
@@ -69,9 +71,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7B5D980E1D132718009C1439 /* HeySiriMacOS */ = {
+		7B5D980E1D132718009C1439 /* HeySiri */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7B5D981E1D132718009C1439 /* Build configuration list for PBXNativeTarget "HeySiriMacOS" */;
+			buildConfigurationList = 7B5D981E1D132718009C1439 /* Build configuration list for PBXNativeTarget "HeySiri" */;
 			buildPhases = (
 				7B5D980B1D132718009C1439 /* Sources */,
 				7B5D980C1D132718009C1439 /* Frameworks */,
@@ -81,9 +83,9 @@
 			);
 			dependencies = (
 			);
-			name = HeySiriMacOS;
-			productName = HeySiriMacOS;
-			productReference = 7B5D980F1D132718009C1439 /* HeySiriMacOS.app */;
+			name = HeySiri;
+			productName = HeySiri;
+			productReference = 7B5D980F1D132718009C1439 /* HeySiri.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -94,16 +96,22 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
 				LastUpgradeCheck = 0800;
-				ORGANIZATIONNAME = "Matthijs Logemann";
+				ORGANIZATIONNAME = Pannous.com;
 				TargetAttributes = {
 					7B5D980E1D132718009C1439 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = B325LM52BE;
 						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
-			buildConfigurationList = 7B5D980A1D132718009C1439 /* Build configuration list for PBXProject "HeySiriMacOS" */;
+			buildConfigurationList = 7B5D980A1D132718009C1439 /* Build configuration list for PBXProject "HeySiri" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -116,7 +124,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7B5D980E1D132718009C1439 /* HeySiriMacOS */,
+				7B5D980E1D132718009C1439 /* HeySiri */,
 			);
 		};
 /* End PBXProject section */
@@ -247,16 +255,21 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = HeySiri/HeySiri.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = B325LM52BE;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks",
 				);
-				INFOPLIST_FILE = HeySiriMacOS/Info.plist;
+				INFOPLIST_FILE = HeySiri/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				OTHER_LDFLAGS = "";
-				PRODUCT_BUNDLE_IDENTIFIER = nl.logicbit.HeySiriMacOS;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pannous.HeySiri;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
@@ -267,16 +280,21 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = HeySiri/HeySiri.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = B325LM52BE;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks",
 				);
-				INFOPLIST_FILE = HeySiriMacOS/Info.plist;
+				INFOPLIST_FILE = HeySiri/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				OTHER_LDFLAGS = "";
-				PRODUCT_BUNDLE_IDENTIFIER = nl.logicbit.HeySiriMacOS;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pannous.HeySiri;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -284,7 +302,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7B5D980A1D132718009C1439 /* Build configuration list for PBXProject "HeySiriMacOS" */ = {
+		7B5D980A1D132718009C1439 /* Build configuration list for PBXProject "HeySiri" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7B5D981C1D132718009C1439 /* Debug */,
@@ -293,7 +311,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7B5D981E1D132718009C1439 /* Build configuration list for PBXNativeTarget "HeySiriMacOS" */ = {
+		7B5D981E1D132718009C1439 /* Build configuration list for PBXNativeTarget "HeySiri" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7B5D981F1D132718009C1439 /* Debug */,
